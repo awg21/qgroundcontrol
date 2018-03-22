@@ -11,7 +11,8 @@
 /// @file
 ///     @brief Coordinate transformation math functions.
 ///     @link https://github.com/PX4/Firmware/blob/master/src/lib/geo/geo.c
-///     @link http://psas.pdx.edu/CoordinateSystem/Latitude_to_LocalTangent.pdf
+///     @link http://psas.pdx.edu/CoordinateSystem/Latitude_to_LocalTangent.pdf (link is broken, next is working)
+///           http://web.archive.org/web/20151016171037/http://psas.pdx.edu/CoordinateSystem/Latitude_to_LocalTangent.pdf
 ///     @link http://dspace.dsto.defence.gov.au/dspace/bitstream/1947/3538/1/DSTO-TN-0432.pdf
 ///     @author David Goodman <dagoodma@gmail.com>
 
@@ -34,8 +35,8 @@ void convertGeoToNed(QGeoCoordinate coord, QGeoCoordinate origin, double* x, dou
 /**
  * @brief Transform a local (East, North, and Down) coordinate into a geodetic coordinate.
  * @param[in] x North component of local coordinate in meters.
- * @param[in] x East component of local coordinate in meters.
- * @param[in] x Down component of local coordinate in meters.
+ * @param[in] y East component of local coordinate in meters.
+ * @param[in] z Down component of local coordinate in meters.
  * @param[in] origin Geoedetic origin for LTP.
  * @param[out] coord Geodetic coordinate to hold result.
  */
